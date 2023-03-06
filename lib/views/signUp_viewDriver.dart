@@ -3,11 +3,18 @@ import 'package:flutter/material.dart';
 
 import 'package:get/get.dart';
 //import 'package:lottie/lottie.dart';
+<<<<<<< HEAD
 // import 'package:responsive_login_ui/views/signup_volunteer.dart';
 import '../views/login_view.dart';
 import '../constants.dart';
 import '../controller/simple_ui_controller.dart';
 import 'package:responsive_login_ui/views/Driver.dart';
+=======
+
+import '../views/login_view.dart';
+import '../constants.dart';
+import '../controller/simple_ui_controller.dart';
+>>>>>>> fbbe6b76034188446022129f432fee451f9e73eb
 
 class SignUpViewDriver extends StatefulWidget {
   const SignUpViewDriver({Key? key}) : super(key: key);
@@ -194,7 +201,11 @@ class _SignUpViewStateDriver extends State<SignUpViewDriver> {
   Widget signUpButton(ThemeData theme) {
     return SizedBox(
       width: double.infinity,
+<<<<<<< HEAD
       height: 55,
+=======
+      height: 35,
+>>>>>>> fbbe6b76034188446022129f432fee451f9e73eb
       child: ElevatedButton(
         style: ButtonStyle(
           backgroundColor: MaterialStateProperty.all(Colors.green),
@@ -206,6 +217,7 @@ class _SignUpViewStateDriver extends State<SignUpViewDriver> {
         ),
         onPressed: () {
           // Validate returns true if the form is valid, or false otherwise.
+<<<<<<< HEAD
           // if (_formKey.currentState!.validate()) {
           //   // ... Navigate To your Home Page
           // }
@@ -213,6 +225,11 @@ class _SignUpViewStateDriver extends State<SignUpViewDriver> {
           context,
           MaterialPageRoute(
           builder: (context) => driver()));
+=======
+          if (_formKey.currentState!.validate()) {
+            // ... Navigate To your Home Page
+          }
+>>>>>>> fbbe6b76034188446022129f432fee451f9e73eb
         },
         child: const Text('Sign up'),
       ),

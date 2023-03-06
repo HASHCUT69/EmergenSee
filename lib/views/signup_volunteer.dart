@@ -1,9 +1,16 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+<<<<<<< HEAD
 
 import 'package:get/get.dart';
 //import 'package:lottie/lottie.dart';
 import 'package:responsive_login_ui/views/Volunteer.dart';
+=======
+import './vlounteer.dart';
+import 'package:get/get.dart';
+//import 'package:lottie/lottie.dart';
+
+>>>>>>> fbbe6b76034188446022129f432fee451f9e73eb
 import '../views/login_view.dart';
 import '../constants.dart';
 import '../controller/simple_ui_controller.dart';
@@ -205,6 +212,7 @@ class _SignUpViewStateVol extends State<SignUpViewVol> {
         ),
         onPressed: () {
           // Validate returns true if the form is valid, or false otherwise.
+<<<<<<< HEAD
           // if (_formKey.currentState!.validate()) {
           //   // ... Navigate To your Home Page
           // }
@@ -212,6 +220,14 @@ class _SignUpViewStateVol extends State<SignUpViewVol> {
               context,
               MaterialPageRoute(
                   builder: (context) => volunteerView()));
+=======
+          if (_formKey.currentState!.validate()) {
+            // ... Navigate To your Home Page
+            Navigator.push(context,
+                CupertinoPageRoute(
+                    builder: (ctx) => volunteerView()));
+          }
+>>>>>>> fbbe6b76034188446022129f432fee451f9e73eb
         },
         child: const Text('Sign up'),
       ),

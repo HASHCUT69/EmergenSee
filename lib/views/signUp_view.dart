@@ -1,5 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+<<<<<<< HEAD
 import 'package:responsive_login_ui/views/Volunteer.dart';
 // import 'package:responsive_login_ui/views/signup_volunteer.dart';
 import 'package:get/get.dart';
@@ -10,6 +11,15 @@ import '../views/login_view.dart';
 import '../constants.dart';
 import '../controller/simple_ui_controller.dart';
 import 'package:responsive_login_ui/views/user.dart';
+=======
+import 'package:responsive_login_ui/views/signup_volunteer.dart';
+import 'package:get/get.dart';
+//import 'package:lottie/lottie.dart';
+import 'package:responsive_login_ui/views/signUp_viewDriver.dart';
+import '../views/login_view.dart';
+import '../constants.dart';
+import '../controller/simple_ui_controller.dart';
+>>>>>>> fbbe6b76034188446022129f432fee451f9e73eb
 
 class SignUpView extends StatefulWidget {
   const SignUpView({Key? key}) : super(key: key);
@@ -62,7 +72,15 @@ class _SignUpViewState extends State<SignUpView> {
           resizeToAvoidBottomInset: false,
           body: LayoutBuilder(
             builder: (context, constraints) {
+<<<<<<< HEAD
               return _buildLargeScreen(size, simpleUIController, theme);
+=======
+              if (constraints.maxWidth > 600) {
+                return _buildLargeScreen(size, simpleUIController, theme);
+              } else {
+                return _buildSmallScreen(size, simpleUIController, theme);
+              }
+>>>>>>> fbbe6b76034188446022129f432fee451f9e73eb
             },
           )),
     );
@@ -96,6 +114,7 @@ class _SignUpViewState extends State<SignUpView> {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       mainAxisAlignment:
+<<<<<<< HEAD
           size.width > 600 ? MainAxisAlignment.center : MainAxisAlignment.center,
       children: [
         SizedBox(
@@ -111,6 +130,18 @@ class _SignUpViewState extends State<SignUpView> {
             : SizedBox(
                 height: size.height * 0.01,
               ),
+=======
+          size.width > 600 ? MainAxisAlignment.center : MainAxisAlignment.start,
+      children: [
+        size.width > 600
+            ? Container()
+            : SizedBox(
+                height: size.height * 0.03,
+              ),
+        const SizedBox(
+          height: 10,
+        ),
+>>>>>>> fbbe6b76034188446022129f432fee451f9e73eb
         Padding(
           padding: const EdgeInsets.only(left: 20.0),
           child: Text(
@@ -119,7 +150,11 @@ class _SignUpViewState extends State<SignUpView> {
           ),
         ),
         SizedBox(
+<<<<<<< HEAD
           height: size.height * 0.01,
+=======
+          height: size.height * 0.03,
+>>>>>>> fbbe6b76034188446022129f432fee451f9e73eb
         ),
         Padding(
           padding: const EdgeInsets.only(left: 20.0, right: 20),
@@ -134,7 +169,11 @@ class _SignUpViewState extends State<SignUpView> {
                     prefixIcon: Icon(Icons.person),
                     hintText: 'Username',
                     border: OutlineInputBorder(
+<<<<<<< HEAD
                       borderRadius: BorderRadius.all(Radius.circular(10)),
+=======
+                      borderRadius: BorderRadius.all(Radius.circular(15)),
+>>>>>>> fbbe6b76034188446022129f432fee451f9e73eb
                     ),
                   ),
 
@@ -152,7 +191,11 @@ class _SignUpViewState extends State<SignUpView> {
                   },
                 ),
                 SizedBox(
+<<<<<<< HEAD
                   height: size.height * 0.01,
+=======
+                  height: size.height * 0.02,
+>>>>>>> fbbe6b76034188446022129f432fee451f9e73eb
                 ),
 
                 /// Gmail
@@ -161,7 +204,11 @@ class _SignUpViewState extends State<SignUpView> {
                   controller: emailController,
                   decoration: const InputDecoration(
                     prefixIcon: Icon(Icons.email_rounded),
+<<<<<<< HEAD
                     hintText: 'E-mail address',
+=======
+                    hintText: 'e-mail address',
+>>>>>>> fbbe6b76034188446022129f432fee451f9e73eb
                     border: OutlineInputBorder(
                       borderRadius: BorderRadius.all(Radius.circular(15)),
                     ),
@@ -177,7 +224,11 @@ class _SignUpViewState extends State<SignUpView> {
                   },
                 ),
                 SizedBox(
+<<<<<<< HEAD
                   height: size.height * 0.01,
+=======
+                  height: size.height * 0.02,
+>>>>>>> fbbe6b76034188446022129f432fee451f9e73eb
                 ),
                 TextFormField(
                   style: kTextFormFieldStyle(),
@@ -201,7 +252,11 @@ class _SignUpViewState extends State<SignUpView> {
                   },*/
                 ),
                 SizedBox(
+<<<<<<< HEAD
                   height: size.height * 0.01,
+=======
+                  height: size.height * 0.02,
+>>>>>>> fbbe6b76034188446022129f432fee451f9e73eb
                 ),
 
                 /// password
@@ -253,21 +308,35 @@ class _SignUpViewState extends State<SignUpView> {
                     ),
                   ),
                 ),
+<<<<<<< HEAD
 
                 SizedBox(
                   height: 10,
+=======
+                Text(
+                  'Creating an account means you\'re okay with our Terms of Services and our Privacy Policy',
+                  style: kLoginTermsAndPrivacyStyle(size),
+                  textAlign: TextAlign.center,
+                ),
+                SizedBox(
+                  height: 50,
+>>>>>>> fbbe6b76034188446022129f432fee451f9e73eb
                 ),
                 //Text("User", style: TextStyle()),
                 SizedBox(
                     width: double.infinity,
                     height: 30,
                     child: ElevatedButton(
+<<<<<<< HEAD
                       onPressed: () {
                           Navigator.push(
                                   context,
                           MaterialPageRoute(
                           builder: (context) => (MyApp3())));
                       },
+=======
+                      onPressed: () {},
+>>>>>>> fbbe6b76034188446022129f432fee451f9e73eb
                       child: Text("User"),
                       style: ButtonStyle(
                           shape:
@@ -278,7 +347,11 @@ class _SignUpViewState extends State<SignUpView> {
                               MaterialStateProperty.all<Color>(Colors.green)),
                     )),
                 SizedBox(
+<<<<<<< HEAD
                   height: 10,
+=======
+                  height: 30,
+>>>>>>> fbbe6b76034188446022129f432fee451f9e73eb
                 ),
                 SizedBox(
                     width: double.infinity,
@@ -300,7 +373,11 @@ class _SignUpViewState extends State<SignUpView> {
                               MaterialStateProperty.all<Color>(Colors.green)),
                     )),
                 SizedBox(
+<<<<<<< HEAD
                   height: 10,
+=======
+                  height: 30,
+>>>>>>> fbbe6b76034188446022129f432fee451f9e73eb
                 ),
                 SizedBox(
                     width: double.infinity,
@@ -322,7 +399,11 @@ class _SignUpViewState extends State<SignUpView> {
                               MaterialStateProperty.all<Color>(Colors.green)),
                     )),
                 SizedBox(
+<<<<<<< HEAD
                   height: 10,
+=======
+                  height: 40,
+>>>>>>> fbbe6b76034188446022129f432fee451f9e73eb
                 )
                 /*/// dropdown
                 DropdownButton(
@@ -393,7 +474,11 @@ class _SignUpViewState extends State<SignUpView> {
   Widget signUpButton(ThemeData theme) {
     return SizedBox(
       width: double.infinity,
+<<<<<<< HEAD
       height: 35,
+=======
+      height: 55,
+>>>>>>> fbbe6b76034188446022129f432fee451f9e73eb
       child: ElevatedButton(
         style: ButtonStyle(
           backgroundColor: MaterialStateProperty.all(Colors.green),

@@ -26,7 +26,11 @@ apply plugin: 'kotlin-android'
 apply from: "$flutterRoot/packages/flutter_tools/gradle/flutter.gradle"
 
 android {
+<<<<<<< HEAD
     compileSdkVersion flutter.compileSdkVersion
+=======
+    compileSdkVersion 31
+>>>>>>> fbbe6b76034188446022129f432fee451f9e73eb
     ndkVersion flutter.ndkVersion
 
     compileOptions {
@@ -47,8 +51,13 @@ android {
         applicationId "com.example.responsive_login_ui"
         // You can update the following values to match your application needs.
         // For more information, see: https://docs.flutter.dev/deployment/android#reviewing-the-build-configuration.
+<<<<<<< HEAD
         minSdkVersion 20
         targetSdkVersion 30
+=======
+        minSdkVersion flutter.minSdkVersion
+        targetSdkVersion flutter.targetSdkVersion
+>>>>>>> fbbe6b76034188446022129f432fee451f9e73eb
         versionCode flutterVersionCode.toInteger()
         versionName flutterVersionName
     }
