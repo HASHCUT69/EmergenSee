@@ -1,6 +1,6 @@
 # EmergenSee
 
-1![Image]("./images/EmergenSee (1).png")
+1![Image](./images/EmergenSee (2).png)
 
 ### This application aims to bridge the requirements of emergency service delivery to commnon people. With this simple app, people would be able to book an ambulance with just a single click.
 
@@ -16,5 +16,5 @@ The application shall be designed on the following idea. The various screens tha
 This workflow of the application would be implemented using flutter front end and relies on the google maps api. The application logic also involves use of real time traffic
 to be called to a backend api server.
 
-![Image]("./images/EmergenSee (1).png")
+![Image](./images/EmergenSee (1).png)
 
