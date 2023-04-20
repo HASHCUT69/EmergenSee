@@ -1,6 +1,6 @@
 # EmergenSee
 
-1![Image](./images/logo.png)
+![Image](./images/logo.png)
 
 ### This application aims to bridge the requirements of emergency service delivery to commnon people. With this simple app, people would be able to book an ambulance with just a single click.
 
